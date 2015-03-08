@@ -9,7 +9,7 @@ colnames(power)<- c("Date", "Time", "Global_active_power", "Global_reactive_powe
 power$dt<- paste (power$Date, power$Time, sep = " ")
 power$datetime <- strptime(power$dt, "%d/%m/%Y %H:%M:%S")
 
-# Script to plot and pave to png
+# Script to plot and save to png
 # Call to png graphic device
 png(filename = "plot4.png", width = 480, height = 480, bg = "white") 
 #Create a plot of 2X2 charts

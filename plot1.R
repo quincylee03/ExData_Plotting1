@@ -6,7 +6,7 @@ power <-read.table("./household_power_consumption.txt" , sep=";", skip= 66637, n
 colnames(power)<- c("Date", "Time", "Global_active_power", "Global_reactive_power", "Voltage" , "Global_intensity", "Sub_metering_1" , "Sub_metering_2", "Sub_metering_3")
 
 
-# Script to plot and pave to png
+# Script to plot and save to png
 # Call to png graphic device
 png(filename = "plot1.png", width = 480, height = 480, bg = "white") 
 #Create plot on screen device
